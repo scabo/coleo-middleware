@@ -12,12 +12,12 @@
     ],
     "autoload": {
         "psr-4": {
-            "Coleo\\MIddleware\\": "src/"
+            "Coleo\\Middleware\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "ColeoTest\\MIddleware\\": "tests/"
+            "ColeoTest\\Middleware\\": "tests/"
         }
     },
     "require": {
