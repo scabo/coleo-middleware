@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Coleo\Middleware;
 
 use Psr\Http\Server\MiddlewareInterface;
@@ -10,7 +12,7 @@ class MiddlewareFactory implements MiddlewareFactoryInterface
     {
     }
 
-    public function create($name): MiddlewareInterface
+    public function create(string $name): MiddlewareInterface
     {
         $fullClassName = $this->namespace . '\\' . ucfirst($name);
         if (
